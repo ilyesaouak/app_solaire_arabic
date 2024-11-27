@@ -2,7 +2,7 @@
 
 Here’s a preview of my project demo:
 
-![Project Demo](https://github.com/ilyesaouak/app_solaire_arabic/blob/master/assets/solarapp.gif)
+<img src="https://github.com/ilyesaouak/app_solaire_arabic/blob/master/assets/solarapp.gif" width="500" />
 
 ## Features
 - View information about planets.
