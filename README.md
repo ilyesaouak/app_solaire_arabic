@@ -1,4 +1,4 @@
-# solar_system_arabic
+# solar_system_app
 
 A new Flutter project.
 

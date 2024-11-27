@@ -3,14 +3,12 @@ plugins {
     id "kotlin-android"
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id "dev.flutter.flutter-gradle-plugin"
-    
-
-  // Add the Google services Gradle plugin
-  id("com.google.gms.google-services")
+    // Apply the Google Services plugin for Firebase
+    id "com.google.gms.google-services"
 }
 
 android {
-    namespace = "com.example.solar_system_arabic"
+    namespace = "com.example.solar_system_app"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -24,11 +22,10 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.example.solar_system_arabic"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
+        // Specify your own unique Application ID
+        applicationId = "com.example.solar_system_app"
+        // Update the minSdkVersion to 23
+        minSdkVersion 23
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
@@ -36,8 +33,7 @@ android {
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
+            // Signing with the debug keys for now
             signingConfig = signingConfigs.debug
         }
     }
@@ -47,17 +43,5 @@ flutter {
     source = "../.."
 }
 
-
-dependencies {
-  // Import the Firebase BoM
-  implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
-
-
-  // TODO: Add the dependencies for Firebase products you want to use
-  // When using the BoM, don't specify versions in Firebase dependencies
-  implementation("com.google.firebase:firebase-analytics")
-
-
-  // Add the dependencies for any other desired Firebase products
-  // https://firebase.google.com/docs/android/setup#available-libraries
-}
+// Ensure this line is added at the bottom to apply the Google Services plugin
+apply plugin: 'com.google.gms.google-services'

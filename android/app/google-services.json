@@ -1,41 +1,21 @@
 {
   "project_info": {
-    "project_number": "36705016193",
-    "firebase_url": "https://planets-3b831-default-rtdb.europe-west1.firebasedatabase.app",
-    "project_id": "planets-3b831",
-    "storage_bucket": "planets-3b831.appspot.com"
+    "project_number": "662186846500",
+    "project_id": "solarsystem-dbeff",
+    "storage_bucket": "solarsystem-dbeff.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:36705016193:android:a496a1dec734e854733080",
+        "mobilesdk_app_id": "1:662186846500:android:c42b148228e55fb747ebb1",
         "android_client_info": {
-          "package_name": "com.example.solar_system_arabic"
+          "package_name": "com.example.solar_system_app"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBtJjmPl-QhrczfTfS3qW7eiVrfzBgz1gM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:36705016193:android:d82dcb4cfd3c50ad733080",
-        "android_client_info": {
-          "package_name": "com.example.systeme_solaire_arabe"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBtJjmPl-QhrczfTfS3qW7eiVrfzBgz1gM"
+          "current_key": "AIzaSyDL846Nzj98bRhhJSVwePl6ml1Rnm6u4hQ"
         }
       ],
       "services": {

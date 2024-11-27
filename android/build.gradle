@@ -1,22 +1,19 @@
-android {
-    compileSdk = 33
-
-    defaultConfig {
-        targetSdk = 33
+buildscript {
+    repositories {
+        google() // Ensure Google repository is included
+        mavenCentral() // Ensure Maven Central repository is included
+    }
+    dependencies {
+        // Add the Google Services plugin dependency
+        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.google.gms:google-services:4.3.15'
     }
 }
-plugins {
-  // ...
 
-  // Add the dependency for the Google services Gradle plugin
-  id("com.google.gms.google-services") version "4.4.2" apply false
-  classpath 'com.android.tools.build:gradle:8.7.0'
-
-}
 allprojects {
     repositories {
-        google()
-        mavenCentral()
+        google() // Ensure Google repository is included for all projects
+        mavenCentral() // Ensure Maven Central repository is included for all projects
     }
 }
 
